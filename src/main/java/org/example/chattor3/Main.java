@@ -15,7 +15,7 @@ public class Main {
 		inventory.add(new Apple(3, RED));
 		inventory.add(new Apple(2, RED));
 		inventory.add(new Apple(1, RED));
-		inventory.sort(Comparator.comparing(apple -> apple.getWeight()));
+		inventory.sort(Comparator.comparing(Apple::getWeight));
 	}
 
 }
