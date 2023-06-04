@@ -15,12 +15,7 @@ public class Main {
 		inventory.add(new Apple(3, RED));
 		inventory.add(new Apple(2, RED));
 		inventory.add(new Apple(1, RED));
-		inventory.sort(new Comparator<Apple>() {
-			@Override
-			public int compare(Apple o1, Apple o2) {
-				return o1.getWeight() - o2.getWeight();
-			}
-		});
+		inventory.sort(Comparator.comparing(apple -> apple.getWeight()));
 	}
 
 }
