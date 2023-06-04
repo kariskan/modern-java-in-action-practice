@@ -1,6 +1,6 @@
 package org.example.domain;
 
-enum Color {
+public enum Color {
 	RED,
 	GREEN
 }
